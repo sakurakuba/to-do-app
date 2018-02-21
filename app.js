@@ -1,5 +1,4 @@
 function onReady() {
-let id = 0;
 let toDos = [];
 let id = toDos.length || 0;
 
@@ -12,7 +11,6 @@ function deleteToDo(id) {
 }
 
 function createNewToDo() {
-  if (!newToDoText.value) { return; }
 
   toDos.push({
   title: newToDoText.value,
@@ -68,6 +66,5 @@ renderTheUI();
 }
 
 window.onload = function() {
-  alert("The window has loaded!");
   onReady();
 };
